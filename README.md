@@ -1,4 +1,4 @@
-# DS 4320 Project 1 - Using GFM
+# DS 4320 Project 1 - TITLE!!!
 ### Executive Summary
 This README now documents a GFM-focused DS 4320 project and includes completed project metadata (name, NetID, DOI, links, and license) plus a summary table for quick reference. It also contains a defined problem statement, rationale, references with footnotes, a terminology table, callout examples, and code highlighting examples to demonstrate practical GitHub Flavored Markdown usage.
 
@@ -81,6 +81,29 @@ This project lies at the intersection of politics and technology. It focuses on 
 | Towards Accurate Fake News Detection: Evaluating Machine Learning Approaches and Feature Selection Strategies | The research paper explores machine learning techniques for detecting fake news. It finds that Random Forest and Logistic Regression demonstrate stable, high performance across multiple feature selection methods. Recursive feature elimination and SelectKBest improve classification performance, while PCA reduces interpretability and overall performance. | [View Article](https://drive.google.com/file/d/1sIUP3ldJqsAghQcBOkgI2QxtwuJJyZVr/view?usp=sharing) |
 | CIC TruthSeeker Dataset 2023 (TruthSeeker2023) | The article describes the TruthSeeker dataset, highlighting its contributions to current fake news datasets, including provenance and features. | [View Article](https://drive.google.com/file/d/1QKskKM6B6u6orWnFooaRA1Tvdb6Lw1JM/view?usp=sharing) |
 | World-first social media wargame reveals how AI bots can swing elections | This article describes "Capture the Narrative," a social media wargame where students influence AI bots to affect election results. It demonstrates how easily fake news can be generated and how it impacts decision-making, underscoring the need for increased digital literacy. | [View Article](https://drive.google.com/file/d/1yN3S1a59QLGsjyaktTXaCxERb1EhChc7/view?usp=sharing) |
+
+## Data Creation 
+
+### Provenance
+
+### Code
+
+### Bias Identification
+
+### Bias Mitigation
+
+### Rationale
+
+## Metadata
+### Schema 
+
+### Data
+
+### Data Dictionary 
+
+### Data Dictionary - Quantification of Uncertainty
+
+##
 
 ### References
 * GitHub Docs - Basic writing and formatting syntax [^1]
