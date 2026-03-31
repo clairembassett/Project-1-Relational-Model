@@ -15,7 +15,7 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 [**Data Science Project uses GFM to meet spec**](https://github.com/UVADS/DS-4320/tree/main)
 ### Data - [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/qxm6fm_virginia_edu/IgCDzA5Osn1hRqLfM9T5a0zqAWiED4j0_D5ALxiBqLDtB84?e=ChlPrh)
 ### Pipeline - [analysis code](https://doi.org/10.1000/182)
-### License - [MIT](LICENSE.md)
+### License - [Creative Commons Attribution 4.0 International License](license.md)
 ---
 | Spec | Value |
 |---|---|
@@ -57,16 +57,17 @@ The spread of misinformation on social media has become a growing concern, espec
 | Term            | Meaning                                                                               |
 |--------------------------|-------------------------------------------------------------------------------------------------------------|
 | TruthSeeker2023          | Ground‑truth fake news analysis dataset of tweets linked to real/fake news statements from PolitiFact.     |
-| statement                | Headline/claim of a news article or fact‑checked statement.                                                 |
-| author                   | Person or entity who made the statement (PolitiFact subject).                                               |
-| target                   | Ground‑truth truthfulness category for the statement (PolitiFact‑derived).                                  |                                          |
+| Statement                | Headline/claim of a news article or fact‑checked statement.                                                 |
+| Author                   | Person or entity who made the statement (PolitiFact subject).                                               |
+| Target                   | Ground‑truth truthfulness category for the statement (PolitiFact‑derived).                                  |                                          |
 | Manual keywords          | Manually crafted keywords used to query Twitter for related tweets.                                         |
-| tweet                    | Individual posts created by Twitter users                                  |
+| tweet                    | Individual posts created by Twitter users.                                  |
 | 5 Label Majority Answer  | MTurk majority label for tweet–statement relation: Agree, Mostly Agree, Disagree, Mostly Disagree, Unrelated, or NO MAJORITY. |
 | 3 Label Majority Answer  | MTurk majority label: Agree, Disagree, Unrelated, or NO MAJORITY.      
-| Bots  | An automated account that can interact with other users  |
-| Credibility | The perceived trustworthiness or reliability of an account or its content  |
-| Influence | How a user affects engagement and the spread of content within a network  |
+| Bots  | An automated account that can interact with other users.  |
+| Credibility | The perceived trustworthiness or reliability of an account or its content. |
+| Influence | How a user affects engagement and the spread of content within a network.  |
+| Fake News | False information that is broadcast or published as news for fraudulent or politically motivated purposes. |
 
 ### Domain
 This project lies at the intersection of politics and technology. It focuses on how bots, influence political discourse through the spread of misinformation. By analyzing patterns in fake news and online behavior, the project explores how technological systems can impact public opinion and political dynamics.
