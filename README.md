@@ -130,19 +130,19 @@ The manual keyword generation directly shaped the corpus of the dataset, introdu
 | GPE_percent              | float64  | Percent of text related to geopolitical entities                     | 0.166667 |
 | PERSON_percent           | float64  | Percent of text including references to individuals                              | 0.166667 |
 | MONEY_percent            | float64  | Percent of text discussing monetary amounts                                | 0.166667 |
-| DATA_percent             | float64  | Percent of text containing references to dates                                 | 0.0 |
-| CARDINAL_percent         | float64  | Percent of text using cardinal numbers                           | 0.0 |
-| PERCENT_percent          | float64  | Percent of text including percentages                              | 0.0 |
-| ORDINAL_percent          | float64  | Percent of text using ordinal numbers                             | 0.0 |
-| FAC_percent              | float64  | Percent of text including spaCy FAC tags                                   | 0.0 |
-| LAW_percent              | float64  | Percent of text including mentioning legal documents                            | 0.0 |
-| PRODUCT_percent          | float64  | Percent of text including references to products                             | 0.0 |
-| EVENT_percent            | float64  | Percent of text including mentioning specific events                                | 0.0 |
-| TIME_percent             | float64  | Percent of text including references to time-related details                               | 0.0 |
-| LOC_percent              | float64  | Percent of text including references to locations                                  | 0.0 |
-| WORK_OF_ART_percent      | float64  | Percent of text including references to artistic works                             | 0.0 |
-| QUANTITY_percent         | float64  | Percent of text including quantities                              | 0.0 |
-| LANGUAGE_percent         | float64  | Percent of text including references to languages                             | 0.0 |
+| DATA_percent             | float64  | Percent of text containing references to dates                                 | 0.32 |
+| CARDINAL_percent         | float64  | Percent of text using cardinal numbers                           | 0.56 |
+| PERCENT_percent          | float64  | Percent of text including percentages                              | 0.001|
+| ORDINAL_percent          | float64  | Percent of text using ordinal numbers                             | 0.30 |
+| FAC_percent              | float64  | Percent of text including spaCy FAC tags                                   | 0.230 |
+| LAW_percent              | float64  | Percent of text including mentioning legal documents                            | 0.120 |
+| PRODUCT_percent          | float64  | Percent of text including references to products                             | 0.450 |
+| EVENT_percent            | float64  | Percent of text including mentioning specific events                                | 0.024 |
+| TIME_percent             | float64  | Percent of text including references to time-related details                               | 0.089 |
+| LOC_percent              | float64  | Percent of text including references to locations                                  | 0.009 |
+| WORK_OF_ART_percent      | float64  | Percent of text including references to artistic works                             | 0.075 |
+| QUANTITY_percent         | float64  | Percent of text including quantities                              | 0.045 |
+| LANGUAGE_percent         | float64  | Percent of text including references to languages                             | 0.065 |
 | Max Word                 | int64    | Length of the longest word in the sentence                                 | 14 |
 | Min Word                 | int64    | Length of the shortest word in the sentence                                | 1 |
 | Avg Word Length          | float64  | Average length of words in the sentence                                    | 5.47619 |
