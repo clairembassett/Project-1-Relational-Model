@@ -186,7 +186,6 @@ The manual keyword generation directly shaped the corpus of the dataset, introdu
 
 | Field Name | Data Type | Min | Max | Mean | Std Dev | Null/Missing |
 |-----------|-----------|-----|-----|------|---------|--------------|
-| Unnamed: 0 | int64 | 0.0 | 1.341970e+05 | 67098.500000 | 38739.770050 | 0 |
 | BinaryNumTarget | float64 | 0.0 | 1.000000e+00 | 0.513644 | 0.499816 | 0 |
 | followers_count | float64 | 0.0 | 1.306019e+08 | 11293.082103 | 437497.073676 | 0 |
 | friends_count | float64 | 0.0 | 5.869010e+05 | 1893.454455 | 6997.695671 | 0 |
