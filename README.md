@@ -109,6 +109,7 @@ The manual keyword generation directly shaped the corpus of the dataset, introdu
 
 ## Metadata
 ### Schema 
+[ERD Diagram] [ ]
 
 ### Tables 
 | Table | Description | Link |
