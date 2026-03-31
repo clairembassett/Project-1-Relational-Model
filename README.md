@@ -13,7 +13,7 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 ### DOI - [https://doi.org/10.1000/182](https://doi.org/10.1000/182)
 ### Press Release
 [**Data Science Project uses GFM to meet spec**](https://github.com/UVADS/DS-4320/tree/main)
-### Data - [link to data](https://doi.org/10.1000/182)
+### Data - [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/qxm6fm_virginia_edu/IgCDzA5Osn1hRqLfM9T5a0zqAWiED4j0_D5ALxiBqLDtB84?e=ChlPrh)
 ### Pipeline - [analysis code](https://doi.org/10.1000/182)
 ### License - [MIT](LICENSE.md)
 ---
@@ -23,7 +23,7 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 | NetID | qxm6fm |
 | DOI | [https://doi.org/10.1000/182](https://doi.org/10.1000/182) |
 | Press Release | [Data Science Project uses GFM to meet spec](https://github.com/UVADS/DS-4320/tree/main) |
-| Data | [link to data](https://doi.org/10.1000/182) |
+| Data | [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/qxm6fm_virginia_edu/IgCDzA5Osn1hRqLfM9T5a0zqAWiED4j0_D5ALxiBqLDtB84?e=ChlPrh) |
 | Pipeline | [analysis code](https://doi.org/10.1000/182) |
 | License | [MIT](LICENSE.md) |
 
@@ -85,19 +85,38 @@ This project lies at the intersection of politics and technology. It focuses on 
 ## Data Creation 
 
 ### Provenance
+The TruthSeeker dataset was found by querying large datasets related to bot detection and the factor of fake news. It was selected due to its size and complexity. The physical compositon of the dataset was sourced by crawling Twitter for tweets related to real and fake news stories drawn from PolitiFact, using manually generated keywords fed into the Twitter API to collect over tweets linked to 700 real and 700 fake news items. Ground truth labels were then established through Amazon Mechanical Turk crowdsourcing, where workers rated how closely each tweet aligned with its associated news statement, with a majority agreement algorithm assigning final validity classifications.
+
+To access the data this link was used: https://www.unb.ca//cic/datasets/truthseeker-2023.html . Then scroll down to download the dataset on the bottom of the page, entering information, downloading the zip file, and then downloading the "Features_For_Traditional_ML_Techniques" dataset.
 
 ### Code
 
+| Code Title | Description | Link |
+|-------|-------------|------|
+| Loading | Code cleaning data, creating unique identifiers, and generating seperate parquet files from CSV. | [INSERT LINK](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQC4h9mPQ0XPQLXMnoB4yJBgAZQjTFWv8w55AuXFZ4ZpXf4?e=cZqAc6) |
+| Pipeline  | A table containing 134,198 tweet records from the TruthSeeker dataset, including the linguistic characteristics of each tweet such as punctuation and word classification.  | [lexical.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQD-UPFOSB5OTaKMdoFk-BqCAQVtBeNMIQkpup2Z8Ty4UHM?e=mr8h1Q) |
+
+
+
 ### Bias Identification
+Bias was likely introduced to this dataset, as the tweets were collected using manually generated keywords, meaning keywords not anticipated by the researchers were excluded entirely. Additionally, only targeting twitter could limit certain content as the demographic of twitter skews towards younger users, therefore, fake news/bot accounts would be targeted at this population. Furthermore, the dataset lacks unique user identifiers meaning the same user's bot and credibility scores may appear across several rows if they posted more than one tweet in the dataset, thus, distorting the true distribution of user-level signals. 
 
 ### Bias Mitigation
+By using MTurk annotations, bias is partially mitigated by requiring consensus across multiple independent raters rather than relying on a single judgment. Additionally, the large sample size of 134,198 tweets helps dilute the impact of uneven keyword coverage and repeated user records, reducing the influence of any single skewed observation on the overall dataset.
 
 ### Rationale
+The manual keyword generation directly shaped the corpus of the dataset, introducing uncertainty about the coverage of tweet collection. However, this approach made data generation feasible and ensured tweets were relevant to common real and fake news topics. The exclusion of unique user identifiers, while limiting user-level analysis, was likely an ethical decision used to protect user privacy in accordance with the platforms terms of service and data protection standards. Additionally, restricting the collection to Twitter, while a limitation in terms of generalizability, provided a consistent structure with standardized metadata fields, making the data more usable. 
 
 ## Metadata
 ### Schema 
 
-### Data
+### Tables 
+| Table | Description | Link |
+|-------|-------------|------|
+| Text | A table containing 134,198 tweet records from the TruthSeeker dataset, describing the text features of tweets including information on word make-up and the percentage of tags in the text. | [text.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQC4h9mPQ0XPQLXMnoB4yJBgAZQjTFWv8w55AuXFZ4ZpXf4?e=cZqAc6) |
+| Lexical | A table containing 134,198 tweet records from the TruthSeeker dataset, including the linguistic characteristics of each tweet such as punctuation and word classification.  | [lexical.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQD-UPFOSB5OTaKMdoFk-BqCAQVtBeNMIQkpup2Z8Ty4UHM?e=mr8h1Q) |
+| Meta-data | A table containing 134,198 tweet records made from the TruthSeeker dataset, including information on the user who posted the tweet, including the size of following and interaction totals on posts. | [metadata.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQBvurMzcYT6Qa8fpABqehkxASOv1qsr1GLJADMs3oPsg_U?e=J2r12y) |
+| Scores |A table containing 134,198 tweet records derived from the TruthSeeker dataset, capturing credibility, influence, and bot activity scores alongside fake news labels. | [scores.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQDatITsN_HlQ5DUvow7xuI0AS76HvPFEMi-wZ_fZ30KiL4?e=mGfknG) |
 
 ### Data Dictionary 
 
@@ -227,56 +246,5 @@ This project lies at the intersection of politics and technology. It focuses on 
 | digits | int64 | 0.0 | 138.0 | 3.559494 | 6.674458 | 0 |
 | long_word_freq | int64 | 0.0 | 47.0 | 2.249557 | 2.912136 | 0 |
 | short_word_freq | int64 | 0.0 | 164.0 | 21.438658 | 9.625147 | 0 |
-
-
-##
-
-### References
-* GitHub Docs - Basic writing and formatting syntax [^1]
-* GitHub Flavored Markdown Spec [^2]
-* Markdown Creator's Blog [^3]
-
-
-[^1]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-[^2]: https://github.github.com/gfm/
-[^3]: https://daringfireball.net/projects/markdown/
-
-### Terminology
-| Term | appearance | code |
-|:------|:------------:|---:|
-|Superscript | 2<sup>nd</sup>| `<sup>nd</sup>`|
-|Subscript | 2<sub>nd</sub>| `<sub>nd</sub>`|
-|Inline code| `import numpy as np`| \` \` |
-|Table justification | use colons in table header row | `:---` or `:---:` or `---:`|
-
-### Background Summary
-> [!TIP]
-> Did you know you can make these call outs
-
-
-
-### Code Highlighting
-
-#### Formatting plain
-```
-import numpy as np
-
-x = 137
-
-for fruit in fruits:
-    print fruit
-```
-
-
-#### Formatting with python
-```python
-import numpy as np
-
-x = 137
-
-for fruit in fruits:
-    print fruit
-```
-
 
 
