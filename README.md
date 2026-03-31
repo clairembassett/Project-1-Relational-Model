@@ -1,4 +1,4 @@
-# DS 4320 Project 1 - TITLE!!!
+# DS 4320 Project 1 - What Fake News and Bots Have in Common: A Predictive Feature Analysis
 ### Executive Summary
 This README now documents a GFM-focused DS 4320 project and includes completed project metadata (name, NetID, DOI, links, and license) plus a summary table for quick reference. It also contains a defined problem statement, rationale, references with footnotes, a terminology table, callout examples, and code highlighting examples to demonstrate practical GitHub Flavored Markdown usage.
 
@@ -36,11 +36,10 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 ### General and Specific Problem
 
 * **General Problem:** Bot Detection
-* **Specific Problem:** How can we predict the presence of bots by analyzing patterns in how misinformation is created and spread? Specifically, can features such as misleading content labels, text patterns, and engagement behavior from the Truth Seeker dataset be used as signals to improve bot detection?
+* **Specific Problem:** Can the same tweet features that identify fake news also help detect bots? 
+
   
 ### Rationale
-
-This refinement goes beyond detecting bots but rather analyzing their role in spreading misinformation. By understanding how bots disseminate false information and the signals that may point to an automated account, researchers are able to identify key aspects of these bots. enables researchers to understand patterns in fake news creation. Thus allowing for effective migtifation strategies to protect users.
 
 This approach goes beyond simply detecting bots, focusing instead on understanding their role in spreading misinformation. By analyzing how bots disseminate false or misleading content and identifying signals indicative of automated behavior, researchers can uncover patterns in fake news creation. These insights enable the development of targeted mitigation strategies to protect users and improve the integrity of news and information. 
 
@@ -62,7 +61,7 @@ The spread of misinformation on social media has become a growing concern, espec
 | author                   | Person or entity who made the statement (PolitiFact subject).                                               |
 | target                   | Ground‑truth truthfulness category for the statement (PolitiFact‑derived).                                  |                                          |
 | Manual keywords          | Manually crafted keywords used to query Twitter for related tweets.                                         |
-| tweet                    | Tweet text retrieved using the manual keywords and linked to a statement.                                   |
+| tweet                    | Individual posts created by Twitter users                                  |
 | 5 Label Majority Answer  | MTurk majority label for tweet–statement relation: Agree, Mostly Agree, Disagree, Mostly Disagree, Unrelated, or NO MAJORITY. |
 | 3 Label Majority Answer  | MTurk majority label: Agree, Disagree, Unrelated, or NO MAJORITY.      
 | Bots  | An automated account that can interact with other users  |
