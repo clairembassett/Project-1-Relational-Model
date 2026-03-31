@@ -76,11 +76,11 @@ This project lies at the intersection of politics and technology. It focuses on 
 
 | Title | Brief Description | Link to File |
 |------|------------------|--------------|
-| AI and Misinformation | Explores how artificial intelligence has made it easy to mass-produce realistic fake images and news, leading to an increase in AI-enabled fake news sites in 2023 and amplifying the impact of misinformation on elections and conflicts. | [View Article](https://drive.google.com/file/d/1GnF-vaL7ZVtajucNA3lw22He_96Jzg30/view?usp=sharing) |
-| Bots and Misinformation Spread on Social Media: Implications for COVID-19 | The article explores the prevalence of bots in spreading misinformation related to COVID-19. Additionally, it examines how this can influence public behavior and contribute to harmful outcomes such as reduced adherence to public safety measures. | [View Article](https://drive.google.com/file/d/1MVuG_PYsb5qzGVKq4v045qVN4ZX4GU4s/view?usp=sharing) |
-| Towards Accurate Fake News Detection: Evaluating Machine Learning Approaches and Feature Selection Strategies | The research paper explores machine learning techniques for detecting fake news. It finds that Random Forest and Logistic Regression demonstrate stable, high performance across multiple feature selection methods. Recursive feature elimination and SelectKBest improve classification performance, while PCA reduces interpretability and overall performance. | [View Article](https://drive.google.com/file/d/1sIUP3ldJqsAghQcBOkgI2QxtwuJJyZVr/view?usp=sharing) |
-| CIC TruthSeeker Dataset 2023 (TruthSeeker2023) | The article describes the TruthSeeker dataset, highlighting its contributions to current fake news datasets, including provenance and features. | [View Article](https://drive.google.com/file/d/1QKskKM6B6u6orWnFooaRA1Tvdb6Lw1JM/view?usp=sharing) |
-| World-first social media wargame reveals how AI bots can swing elections | This article describes "Capture the Narrative," a social media wargame where students influence AI bots to affect election results. It demonstrates how easily fake news can be generated and how it impacts decision-making, underscoring the need for increased digital literacy. | [View Article](https://drive.google.com/file/d/1yN3S1a59QLGsjyaktTXaCxERb1EhChc7/view?usp=sharing) |
+| AI and Misinformation | Explores how artificial intelligence has made it easy to mass-produce realistic fake images and news, leading to an increase in AI-enabled fake news sites in 2023 and amplifying the impact of misinformation on elections and conflicts. | [View Article](https://github.com/clairembassett/Project-1-Relational-Model/blob/dadbe4b1780a463abae0b5642ffeb26296abdf57/Readings/AI%20and%20Misinformation%20_%202024%20Dean_s%20Report.pdf) |
+| Bots and Misinformation Spread on Social Media: Implications for COVID-19 | The article explores the prevalence of bots in spreading misinformation related to COVID-19. Additionally, it examines how this can influence public behavior and contribute to harmful outcomes such as reduced adherence to public safety measures. | [View Article](https://github.com/clairembassett/Project-1-Relational-Model/blob/dadbe4b1780a463abae0b5642ffeb26296abdf57/Readings/Bots%20and%20Misinformation%20Spread%20on%20Social%20Media_%20Implications%20for%20COVID-19%20-%20PMC.pdf) |
+| Towards Accurate Fake News Detection: Evaluating Machine Learning Approaches and Feature Selection Strategies | The research paper explores machine learning techniques for detecting fake news. It finds that Random Forest and Logistic Regression demonstrate stable, high performance across multiple feature selection methods. Recursive feature elimination and SelectKBest improve classification performance, while PCA reduces interpretability and overall performance. | [View Article](https://github.com/clairembassett/Project-1-Relational-Model/blob/dadbe4b1780a463abae0b5642ffeb26296abdf57/Readings/Towards%20Accurate%20Fake%20News%20Detection_%20Evaluating%20Machine%20Learning%20Approaches%20and%20Feature%20Selection%20Strategies.pdf) |
+| CIC TruthSeeker Dataset 2023 (TruthSeeker2023) | The article describes the TruthSeeker dataset, highlighting its contributions to current fake news datasets, including provenance and features. | [View Article](https://github.com/clairembassett/Project-1-Relational-Model/blob/dadbe4b1780a463abae0b5642ffeb26296abdf57/Readings/Truth%20Seeker%20Dataset%202023%20_%20Datasets%20_%20Research%20_%20Canadian%20Institute%20for%20Cybersecurity%20_%20UNB.pdf) |
+| World-first social media wargame reveals how AI bots can swing elections | This article describes "Capture the Narrative," a social media wargame where students influence AI bots to affect election results. It demonstrates how easily fake news can be generated and how it impacts decision-making, underscoring the need for increased digital literacy. | [View Article](https://github.com/clairembassett/Project-1-Relational-Model/blob/dadbe4b1780a463abae0b5642ffeb26296abdf57/Readings/World-first%20social%20media%20wargame%20reveals%20how%20AI%20bots%20can%20swing%20elections.pdf) |
 
 ## Data Creation 
 
@@ -94,7 +94,7 @@ To access the data this link was used: https://www.unb.ca//cic/datasets/truthsee
 | Code Title | Description | Link |
 |-------|-------------|------|
 | Loading | Code cleaning data, creating unique identifiers, and generating seperate parquet files from CSV. | [INSERT LINK](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQC4h9mPQ0XPQLXMnoB4yJBgAZQjTFWv8w55AuXFZ4ZpXf4?e=cZqAc6) |
-| Pipeline  | A table containing 134,198 tweet records from the TruthSeeker dataset, including the linguistic characteristics of each tweet such as punctuation and word classification.  | [lexical.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQD-UPFOSB5OTaKMdoFk-BqCAQVtBeNMIQkpup2Z8Ty4UHM?e=mr8h1Q) |
+| Pipeline  | A table containing 134,198 tweet records from the TruthSeeker dataset, including the contents of loading.ipynb but adding duckdb connection and queries, and analysis using ML techniques | [INSERT LINK](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQD-UPFOSB5OTaKMdoFk-BqCAQVtBeNMIQkpup2Z8Ty4UHM?e=mr8h1Q) |
 
 
 
@@ -125,24 +125,24 @@ The manual keyword generation directly shaped the corpus of the dataset, introdu
 |--------------------------|----------|-----------------------------------------------------------------------------|---------|
 | unique_count             | int64    | number of unique, complex words                                            | 5 |
 | total_count              | int64    | total number of words                                                      | 6 |
-| ORG_percent              | float64  | Percent of text including spaCy ORG tags                                   | 0.333333 |
-| NORP_percent             | float64  | Percent of text including spaCy NORP tags                                  | 0.166667 |
-| GPE_percent              | float64  | Percent of text including spaCy GPE tags                                   | 0.166667 |
-| PERSON_percent           | float64  | Percent of text including spaCy PERSON tags                                | 0.166667 |
-| MONEY_percent            | float64  | Percent of text including spaCy MONEY tags                                 | 0.166667 |
-| DATA_percent             | float64  | Percent of text including spaCy DATA tags                                  | 0.0 |
-| CARDINAL_percent         | float64  | Percent of text including spaCy CARDINAL tags                              | 0.0 |
-| PERCENT_percent          | float64  | Percent of text including spaCy PERCENT tags                               | 0.0 |
-| ORDINAL_percent          | float64  | Percent of text including spaCy ORDINAL tags                               | 0.0 |
+| ORG_percent              | float64  | Percent of text referencing organizations                                   | 0.333333 |
+| NORP_percent             | float64  | Percent of text mentioning groups or affiliations                         | 0.166667 |
+| GPE_percent              | float64  | Percent of text related to geopolitical entities                     | 0.166667 |
+| PERSON_percent           | float64  | Percent of text including references to individuals                              | 0.166667 |
+| MONEY_percent            | float64  | Percent of text discussing monetary amounts                                | 0.166667 |
+| DATA_percent             | float64  | Percent of text containing references to dates                                 | 0.0 |
+| CARDINAL_percent         | float64  | Percent of text using cardinal numbers                           | 0.0 |
+| PERCENT_percent          | float64  | Percent of text including percentages                              | 0.0 |
+| ORDINAL_percent          | float64  | Percent of text using ordinal numbers                             | 0.0 |
 | FAC_percent              | float64  | Percent of text including spaCy FAC tags                                   | 0.0 |
-| LAW_percent              | float64  | Percent of text including spaCy LAW tags                                   | 0.0 |
-| PRODUCT_percent          | float64  | Percent of text including spaCy PRODUCT tags                               | 0.0 |
-| EVENT_percent            | float64  | Percent of text including spaCy EVENT tags                                 | 0.0 |
-| TIME_percent             | float64  | Percent of text including spaCy TIME tags                                  | 0.0 |
-| LOC_percent              | float64  | Percent of text including spaCy LOC tags                                   | 0.0 |
-| WORK_OF_ART_percent      | float64  | Percent of text including spaCy WOA tags                                   | 0.0 |
-| QUANTITY_percent         | float64  | Percent of text including spaCy QUANTITY tags                              | 0.0 |
-| LANGUAGE_percent         | float64  | Percent of text including spaCy LANGUAGE tags                              | 0.0 |
+| LAW_percent              | float64  | Percent of text including mentioning legal documents                            | 0.0 |
+| PRODUCT_percent          | float64  | Percent of text including references to products                             | 0.0 |
+| EVENT_percent            | float64  | Percent of text including mentioning specific events                                | 0.0 |
+| TIME_percent             | float64  | Percent of text including references to time-related details                               | 0.0 |
+| LOC_percent              | float64  | Percent of text including references to locations                                  | 0.0 |
+| WORK_OF_ART_percent      | float64  | Percent of text including references to artistic works                             | 0.0 |
+| QUANTITY_percent         | float64  | Percent of text including quantities                              | 0.0 |
+| LANGUAGE_percent         | float64  | Percent of text including references to languages                             | 0.0 |
 | Max Word                 | int64    | Length of the longest word in the sentence                                 | 14 |
 | Min Word                 | int64    | Length of the shortest word in the sentence                                | 1 |
 | Avg Word Length          | float64  | Average length of words in the sentence                                    | 5.47619 |
