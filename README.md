@@ -101,7 +101,133 @@ This project lies at the intersection of politics and technology. It focuses on 
 
 ### Data Dictionary 
 
+
+| name                     | data type | description                                                                 | example |
+|--------------------------|----------|-----------------------------------------------------------------------------|---------|
+| unique_count             | int64    | number of unique, complex words                                            | 5 |
+| total_count              | int64    | total number of words                                                      | 6 |
+| ORG_percent              | float64  | Percent of text including spaCy ORG tags                                   | 0.333333 |
+| NORP_percent             | float64  | Percent of text including spaCy NORP tags                                  | 0.166667 |
+| GPE_percent              | float64  | Percent of text including spaCy GPE tags                                   | 0.166667 |
+| PERSON_percent           | float64  | Percent of text including spaCy PERSON tags                                | 0.166667 |
+| MONEY_percent            | float64  | Percent of text including spaCy MONEY tags                                 | 0.166667 |
+| DATA_percent             | float64  | Percent of text including spaCy DATA tags                                  | 0.0 |
+| CARDINAL_percent         | float64  | Percent of text including spaCy CARDINAL tags                              | 0.0 |
+| PERCENT_percent          | float64  | Percent of text including spaCy PERCENT tags                               | 0.0 |
+| ORDINAL_percent          | float64  | Percent of text including spaCy ORDINAL tags                               | 0.0 |
+| FAC_percent              | float64  | Percent of text including spaCy FAC tags                                   | 0.0 |
+| LAW_percent              | float64  | Percent of text including spaCy LAW tags                                   | 0.0 |
+| PRODUCT_percent          | float64  | Percent of text including spaCy PRODUCT tags                               | 0.0 |
+| EVENT_percent            | float64  | Percent of text including spaCy EVENT tags                                 | 0.0 |
+| TIME_percent             | float64  | Percent of text including spaCy TIME tags                                  | 0.0 |
+| LOC_percent              | float64  | Percent of text including spaCy LOC tags                                   | 0.0 |
+| WORK_OF_ART_percent      | float64  | Percent of text including spaCy WOA tags                                   | 0.0 |
+| QUANTITY_percent         | float64  | Percent of text including spaCy QUANTITY tags                              | 0.0 |
+| LANGUAGE_percent         | float64  | Percent of text including spaCy LANGUAGE tags                              | 0.0 |
+| Max Word                 | int64    | Length of the longest word in the sentence                                 | 14 |
+| Min Word                 | int64    | Length of the shortest word in the sentence                                | 1 |
+| Avg Word Length          | float64  | Average length of words in the sentence                                    | 5.47619 |
+| present_verb             | int64    | Number of present tense verbs                                              | 1 |
+| past_verb                | int64    | Number of past tense verbs                                                 | 1 |
+| adjectives               | int64    | Number of adjectives                                                       | 1 |
+| pronouns                 | int64    | Number of pronouns                                                         | 1 |
+| TO’s                     | int64    | Number of to usages                                                        | 0 |
+| determiners              | int64    | Number of determiners                                                      | 0 |
+| conjunctions             | int64    | Number of conjunctions                                                     | 0 |
+| dots                     | int64    | Number of (.) used                                                         | 5 |
+| exclamations             | int64    | Number of (!) used                                                         | 0 |
+| question                 | int64    | Number of (?) used                                                         | 1 |
+| ampersand                | int64    | Number of (&) used                                                         | 0 |
+| capitals                 | int64    | Number of capitalized letters                                              | 33 |
+| digits                   | int64    | Number of digits (0-9) used                                                | 3 |
+| long_word_freq           | int64    | Number of long words                                                       | 5 |
+| short_word_freq          | int64    | Number of short words                                                      | 19 |
+| followers_count          | float64  | Number of followers                                                       | 4262.0 |
+| friends_count            | float64  | Number of friends                                                         | 3619.0 |
+| favourites_count         | float64  | Number of favourites across all tweets                                    | 34945.0 |
+| statuses_count           | float64  | Number of tweets                                                          | 16423.0 |
+| listed_count             | float64  | Number of tweets the user has in lists                                    | 44.0 |
+| mentions                 | float64  | Number of times the user was mentioned                                    | 1.0 |
+| replies                  | float64  | Number of replies the user has                                            | 1.0 |
+| retweets                 | float64  | Number of retweets the user has                                           | 3.0 |
+| favourites               | float64  | Number of favourites the user has                                         | 10.0 |
+| hashtags                 | float64  | Number of hashtags (#) the user has used                                  | 0.0 |
+| URLs                     | float64  | whether the user has a provided a url in relation to their profile        | 1.0 |
+| quotes                   | float64  | Number of times the user has been quote tweeted                           | 1.0 |
+| BotScoreBinary           | float64  | Binary score whether the user is considered a bot or not                  | 0.0 |
+| cred                     | float64  | Credibility score                                                         | 0.540794 |
+| normalized_influence     | float64  | Influence score the user has, normalized                                  | 0.104602 |
+| majority_target          | bool     | Truth value of the tweet                                                  | True |
+| statement                | object   | Headline of a news article                                                | End of eviction moratorium means millions could lose housing |
+| BinaryNumTarget          | float64  | Binary representation of truth value (1 = True / 0 = False)               | 1.0 |
+| tweet                    | object   | Twitter post text                                                         | @POTUS Biden Blunders...what did I miss? |
+
+
 ### Data Dictionary - Quantification of Uncertainty
+
+| Field Name | Data Type | Min | Max | Mean | Std Dev | Null/Missing |
+|-----------|-----------|-----|-----|------|---------|--------------|
+| Unnamed: 0 | int64 | 0.0 | 1.341970e+05 | 67098.500000 | 38739.770050 | 0 |
+| BinaryNumTarget | float64 | 0.0 | 1.000000e+00 | 0.513644 | 0.499816 | 0 |
+| followers_count | float64 | 0.0 | 1.306019e+08 | 11293.082103 | 437497.073676 | 0 |
+| friends_count | float64 | 0.0 | 5.869010e+05 | 1893.454455 | 6997.695671 | 0 |
+| favourites_count | float64 | 0.0 | 1.765080e+06 | 32981.233878 | 68780.210325 | 0 |
+| statuses_count | float64 | 1.0 | 2.958918e+06 | 34195.761449 | 75101.195265 | 0 |
+| listed_count | float64 | 0.0 | 2.221930e+05 | 73.300198 | 1083.274277 | 0 |
+| following | float64 | 0.0 | 0.0 | 0.0 | 0.0 | 0 |
+| BotScore | float64 | 0.0 | 1.0 | 0.059106 | 0.167819 | 0 |
+| BotScoreBinary | float64 | 0.0 | 1.0 | 0.032355 | 0.176942 | 0 |
+| cred | float64 | 0.0 | 1.0 | 0.405852 | 0.239223 | 0 |
+| normalize_influence | float64 | 0.0 | 2.086063e-01 | 0.077665 | 0.026184 | 0 |
+| mentions | float64 | 0.0 | 12.0 | 1.388918 | 1.471604 | 0 |
+| quotes | float64 | 0.0 | 5913.0 | 0.573406 | 28.436726 | 0 |
+| replies | float64 | 0.0 | 42068.0 | 1.914201 | 122.041183 | 0 |
+| retweets | float64 | 0.0 | 126062.0 | 6.674354 | 406.542579 | 0 |
+| favourites | float64 | 0.0 | 460320.0 | 27.572386 | 1831.425703 | 0 |
+| hashtags | float64 | 0.0 | 12.0 | 0.104726 | 0.458687 | 0 |
+| URLs | float64 | 0.0 | 1.0 | 0.737701 | 0.439886 | 0 |
+| unique_count | int64 | 0.0 | 9.0 | 2.365624 | 1.351617 | 0 |
+| total_count | int64 | 0.0 | 32.0 | 3.441229 | 2.479373 | 0 |
+| ORG_percentage | float64 | 0.0 | 1.0 | 0.199964 | 0.276376 | 0 |
+| NORP_percentage | float64 | 0.0 | 1.0 | 0.067412 | 0.165502 | 0 |
+| GPE_percentage | float64 | 0.0 | 1.0 | 0.136151 | 0.242561 | 0 |
+| PERSON_percentage | float64 | 0.0 | 1.0 | 0.221930 | 0.298133 | 0 |
+| MONEY_percentage | float64 | 0.0 | 1.0 | 0.029525 | 0.106880 | 0 |
+| DATE_percentage | float64 | 0.0 | 1.0 | 0.102339 | 0.206059 | 0 |
+| CARDINAL_percentage | float64 | 0.0 | 1.0 | 0.091104 | 0.190366 | 0 |
+| PERCENT_percentage | float64 | 0.0 | 1.0 | 0.030638 | 0.116949 | 0 |
+| ORDINAL_percentage | float64 | 0.0 | 1.0 | 0.012432 | 0.070884 | 0 |
+| FAC_percentage | float64 | 0.0 | 1.0 | 0.003352 | 0.037525 | 0 |
+| LAW_percentage | float64 | 0.0 | 1.0 | 0.005265 | 0.048690 | 0 |
+| PRODUCT_percentage | float64 | 0.0 | 1.0 | 0.006839 | 0.053513 | 0 |
+| EVENT_percentage | float64 | 0.0 | 1.0 | 0.002607 | 0.032400 | 0 |
+| TIME_percentage | float64 | 0.0 | 1.0 | 0.005662 | 0.046830 | 0 |
+| LOC_percentage | float64 | 0.0 | 1.0 | 0.009771 | 0.070224 | 0 |
+| WORK_OF_ART_percentage | float64 | 0.0 | 1.0 | 0.008517 | 0.062580 | 0 |
+| QUANTITY_percentage | float64 | 0.0 | 1.0 | 0.002396 | 0.030757 | 0 |
+| LANGUAGE_percentage | float64 | 0.0 | 1.0 | 0.001011 | 0.019590 | 0 |
+| Word count | int64 | 0.0 | 110.0 | 35.077691 | 13.604442 | 0 |
+| Max word length | int64 | 0.0 | 145.0 | 13.062043 | 3.044782 | 0 |
+| Min word length | int64 | 1.0 | 1000.0 | 1.399857 | 2.795407 | 0 |
+| Average word length | float64 | -1.0 | 88.0 | 5.056648 | 0.825737 | 0 |
+| present_verbs | int64 | 0.0 | 16.0 | 2.452354 | 2.049247 | 0 |
+| past_verbs | int64 | 0.0 | 15.0 | 1.812210 | 1.736990 | 0 |
+| adjectives | int64 | 0.0 | 17.0 | 3.034308 | 2.012125 | 0 |
+| adverbs | int64 | 0.0 | 12.0 | 1.575873 | 1.546382 | 0 |
+| adpositions | int64 | 0.0 | 14.0 | 3.619644 | 2.195625 | 0 |
+| pronouns | int64 | 0.0 | 14.0 | 1.495820 | 1.639470 | 0 |
+| TOs | int64 | 0.0 | 8.0 | 0.788626 | 0.961242 | 0 |
+| determiners | int64 | 0.0 | 5.0 | 0.135583 | 0.379235 | 0 |
+| conjunctions | int64 | 0.0 | 13.0 | 1.003495 | 1.086844 | 0 |
+| dots | int64 | 0.0 | 50.0 | 2.366116 | 2.140459 | 0 |
+| exclamation | int64 | 0.0 | 66.0 | 0.259408 | 0.903957 | 0 |
+| questions | int64 | 0.0 | 43.0 | 0.307151 | 0.774367 | 0 |
+| ampersand | int64 | 0.0 | 13.0 | 0.121537 | 0.453865 | 0 |
+| capitals | int64 | 0.0 | 250.0 | 12.831905 | 15.557524 | 0 |
+| digits | int64 | 0.0 | 138.0 | 3.559494 | 6.674458 | 0 |
+| long_word_freq | int64 | 0.0 | 47.0 | 2.249557 | 2.912136 | 0 |
+| short_word_freq | int64 | 0.0 | 164.0 | 21.438658 | 9.625147 | 0 |
+
 
 ##
 
