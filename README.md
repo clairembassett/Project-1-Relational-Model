@@ -99,7 +99,7 @@ To access the data this link was used: https://www.unb.ca//cic/datasets/truthsee
 
 
 ### Bias Identification
-Bias was likely introduced to this dataset, as the tweets were collected using manually generated keywords, meaning keywords not anticipated by the researchers were excluded entirely. Additionally, only targeting twitter could limit certain content as the demographic of twitter skews towards younger users, therefore, fake news/bot accounts would be targeted at this population. Furthermore, the dataset lacks unique user identifiers meaning the same user's bot and credibility scores may appear across several rows if they posted more than one tweet in the dataset, thus, distorting the true distribution of user-level signals. 
+Bias was likely introduced to this dataset, as the tweets were collected using manually generated keywords, meaning keywords not anticipated by the researchers were excluded entirely. Additionally, only targeting twitter could limit certain content as the demographic of twitter skews towards younger users, therefore, fake news/bot accounts would be targeted at this population. Furthermore, the dataset lacks unique user identifiers meaning the same user's bot and credibility scores may appear across several rows if they posted more than one tweet in the dataset, thus distorting the true distribution of user-level signals. 
 
 ### Bias Mitigation
 By using MTurk annotations, bias is partially mitigated by requiring consensus across multiple independent raters rather than relying on a single judgment. Additionally, the large sample size of 134,198 tweets helps dilute the impact of uneven keyword coverage and repeated user records, reducing the influence of any single skewed observation on the overall dataset.
