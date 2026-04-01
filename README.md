@@ -72,8 +72,7 @@ The spread of misinformation on social media has become a growing concern, espec
 ### Domain
 This project lies at the intersection of politics and technology. It focuses on how bots, influence political discourse through the spread of misinformation. By analyzing patterns in fake news and online behavior, the project explores how technological systems can impact public opinion and political dynamics.
 ### Background Reading
-Readings
-[Readings Here](Readings)
+[Readings Linked Here](Readings)
 ### Summary of Readings
 
 | Title | Brief Description | Link to File |
