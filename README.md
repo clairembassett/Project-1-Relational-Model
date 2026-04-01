@@ -10,7 +10,7 @@ This README now documents a DS 4320 project analyzing predictive features of fak
 
 ### Name - Claire Bassett
 ### NetID - qxm6fm
-### DOI - [https://doi.org/10.1000/182](https://doi.org/10.1000/182)
+### DOI - https://doi.org/10.5281/zenodo.19363222 
 ### Press Release
 [**Common Signals Behind Bots and Fake News Revealed**](PressRelease.MD)
 ### Data - [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/qxm6fm_virginia_edu/IgCDzA5Osn1hRqLfM9T5a0zqAWiED4j0_D5ALxiBqLDtB84?e=ChlPrh)
@@ -21,7 +21,7 @@ This README now documents a DS 4320 project analyzing predictive features of fak
 |---|---|
 | Name | Claire Bassett |
 | NetID | qxm6fm |
-| DOI | [https://doi.org/10.1000/182](https://doi.org/10.1000/182) |
+| DOI | [https://doi.org/10.5281/zenodo.19363222](https://doi.org/10.5281/zenodo.19363222) |
 | Press Release | [**Common Signals Behind Bots and Fake News Revealed**](PressRelease.MD) |
 | Data | [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/qxm6fm_virginia_edu/IgCDzA5Osn1hRqLfM9T5a0zqAWiED4j0_D5ALxiBqLDtB84?e=ChlPrh) |
 | Pipeline |  [Pipeline Code](Pipeline/pipeline.ipynb)
