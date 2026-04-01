@@ -14,17 +14,17 @@ This README now documents a DS 4320 project analyzing predictive features of fak
 ### Press Release
 [**Common Signals Behind Bots and Fake News Revealed**](PressRelease.MD)
 ### Data - [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/qxm6fm_virginia_edu/IgCDzA5Osn1hRqLfM9T5a0zqAWiED4j0_D5ALxiBqLDtB84?e=ChlPrh)
-### Pipeline - [analysis code](https://doi.org/10.1000/182)
-### License - [Creative Commons Attribution 4.0 International License](license.md)
+### Pipeline - [Pipeline Code](Pipeline/pipeline.ipynb)
+### License - [MIT](LICENSE.md)
 ---
 | Spec | Value |
 |---|---|
 | Name | Claire Bassett |
 | NetID | qxm6fm |
 | DOI | [https://doi.org/10.1000/182](https://doi.org/10.1000/182) |
-| Press Release | [Data Science Project uses GFM to meet spec](https://github.com/UVADS/DS-4320/tree/main) |
+| Press Release | [**Common Signals Behind Bots and Fake News Revealed**](PressRelease.MD) |
 | Data | [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/qxm6fm_virginia_edu/IgCDzA5Osn1hRqLfM9T5a0zqAWiED4j0_D5ALxiBqLDtB84?e=ChlPrh) |
-| Pipeline | [analysis code](https://doi.org/10.1000/182) |
+| Pipeline |  [Pipeline Code](Pipeline/pipeline.ipynb)
 | License | [MIT](LICENSE.md) |
 
 ---
