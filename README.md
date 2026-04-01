@@ -49,8 +49,8 @@ This approach goes beyond simply detecting bots, focusing instead on understandi
 The spread of misinformation on social media has become a growing concern, especially as automated accounts, or bots, can amplify false information quickly and at scale. These bots can influence public opinion, distort online discourse, and make it harder for users to distinguish between reliable and misleading content. Given the high level of polarization in the United States today, there is an increasing need for research on how fake accounts disseminate information and contribute to widening political divides.
 
 
-### Press Release Headline and Link
-[**INSERT **](https://github.com/UVADS/DS-4320/tree/main)
+### Press Release
+[**Common Signals Behind Bots and Fake News Revealed**](PressRelease.MD)
 
 ## Domain Exposition
 ### Terminology
@@ -93,8 +93,7 @@ To access the data this link was used: https://www.unb.ca//cic/datasets/truthsee
 
 | Code Title | Description | Link |
 |-------|-------------|------|
-| Loading | Code cleaning data, creating unique identifiers, and generating seperate parquet files from CSV. | [INSERT LINK](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQC4h9mPQ0XPQLXMnoB4yJBgAZQjTFWv8w55AuXFZ4ZpXf4?e=cZqAc6) |
-| Pipeline  | A table containing 134,198 tweet records from the TruthSeeker dataset, including the contents of loading.ipynb but adding duckdb connection and queries, and analysis using ML techniques | [INSERT LINK](https://myuva-my.sharepoint.com/:u:/g/personal/qxm6fm_virginia_edu/IQD-UPFOSB5OTaKMdoFk-BqCAQVtBeNMIQkpup2Z8Ty4UHM?e=mr8h1Q) |
+| Pipeline  |Pipeline containing loading the data, querying in DuckDB, and performing the Random Forest Model to compare features of both bot and fake news detection.| [Pipeline Code](Pipeline/pipeline.ipynb)|
 
 
 
