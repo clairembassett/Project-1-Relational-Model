@@ -109,7 +109,7 @@ The manual keyword generation directly shaped the corpus of the dataset, introdu
 
 ## Metadata
 ### Schema 
-[ERD Diagram] [ ]
+![ERD Diagram](Visualizations/ERDiagram.png)
 
 ### Tables 
 | Table | Description | Link |
