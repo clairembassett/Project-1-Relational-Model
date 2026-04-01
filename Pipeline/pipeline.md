@@ -525,9 +525,7 @@ logger.info("Complete")
 
 
 
-    
 ![Feature Comparison Output](Visualizations/feature_importance_comparison.png)
-    
 
 
 ## Analysis Rationale
