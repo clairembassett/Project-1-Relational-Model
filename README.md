@@ -1,6 +1,6 @@
 # DS 4320 Project 1 - What Fake News and Bots Have in Common: A Predictive Feature Analysis
 ### Executive Summary
-This README now documents a DS 4320 project analyzing predictive features of fake news and bot detection. It includes completed project metadata (name, NetID, DOI, links, and license) plus a summary table for quick reference. It also contains a defined problem statement, rationale, data dictionary, domain exposition, provenance, and bias analysis.
+This README documents a DS 4320 project analyzing predictive features of fake news and bot detection. It includes completed project metadata (name, NetID, DOI, links, and license) plus a summary table for quick reference. It also contains a defined problem statement, rationale, data dictionary, domain exposition, provenance, and bias analysis.
 
 <br>
 
