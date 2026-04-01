@@ -1,6 +1,6 @@
 # DS 4320 Project 1 - What Fake News and Bots Have in Common: A Predictive Feature Analysis
 ### Executive Summary
-This README now documents a GFM-focused DS 4320 project and includes completed project metadata (name, NetID, DOI, links, and license) plus a summary table for quick reference. It also contains a defined problem statement, rationale, references with footnotes, a terminology table, callout examples, and code highlighting examples to demonstrate practical GitHub Flavored Markdown usage.
+This README now documents a DS 4320 project analyzing predictive features of fake news and bot detection. It includes completed project metadata (name, NetID, DOI, links, and license) plus a summary table for quick reference. It also contains a defined problem statement, rationale, data dictionary, domain exposition, provenance, and bias analysis.
 
 <br>
 
@@ -109,7 +109,7 @@ The manual keyword generation directly shaped the corpus of the dataset, introdu
 
 ## Metadata
 ### Schema 
-[ERD Diagram] [ ]
+![ERD Diagram](Visualizations/ERDiagram.png)
 
 ### Tables 
 | Table | Description | Link |
