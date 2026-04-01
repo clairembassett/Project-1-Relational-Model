@@ -523,7 +523,7 @@ logger.info("Complete")
     /tmp/ipykernel_1382/3993341904.py:211: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
       plt.tight_layout()
 
-![Feature Comparison](Visualizations/feature_importance_comparison.png)
+![Feature Comparison](../Visualizations/feature_importance_comparison.png)
 
 ## Analysis Rationale
 
